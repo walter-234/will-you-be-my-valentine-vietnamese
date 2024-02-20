@@ -12,22 +12,22 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "No",
-      "Are you sure?",
-      "What if I asked really nicely?",
-      "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
-      "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
+      "Hem???",
+      "Chéc chưa?",
+      "Iu quá cho thử lại nè 😢😢",
+      "Đi mà đồ đáng iu",
+      "Một chút socola có làm em búi rúi",
+      "Thêm một ly trà sữa nữa nhé?",
+      "NĂN NỈ ĐÓA 🥲🥲",
+      "Khóc chừ :>",
+      "Ôi tim tui như muốn dừng lại",
+      "Yeah already dead",
+      "Tim tui đau quá man",
+      "Đi mà em iu dễ thương",
       ":((((",
-      "PRETTY PLEASE",
-      "Estoy muerto",
-      "No :(",
+      "Nàm ơn đi mòa",
+      "Sắp khok tới nơi rồi",
+      "Huhu :(",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -37,31 +37,36 @@ export default function Page() {
     <div className="-mt-16 flex h-screen flex-col items-center justify-center">
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
+          <img
+            src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
+            className="rounded-lg"
+          />
           <div className="my-4 text-4xl font-bold">
-            WOOOOOO!!! I love you pookie!! ;))
+            😗😗 Nhìn xem ai mà dễ thương quá vậy 😍😍
           </div>
         </>
       ) : (
         <>
           <img
-            className="h-[200px]"
+            className="h-[200px] rounded-lg"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
+          <h1 className="my-4 text-4xl">
+            Em iu à... Em muốn làm va lung tung của anh hem? 💕💕💕
+          </h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
-              Yes
+              💕 Dạ cóaa 💕
             </button>
             <button
               onClick={handleNoClick}
               className=" rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
             >
-              {noCount === 0 ? "No" : getNoButtonText()}
+              {noCount === 0 ? "Hem" : getNoButtonText()}
             </button>
           </div>
         </>
