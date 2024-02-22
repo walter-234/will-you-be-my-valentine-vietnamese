@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 
 export default function Page() {
@@ -52,7 +51,7 @@ export default function Page() {
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
           <h1 className="my-4 text-4xl">
-            Em iu à... Em muốn làm va lung tung của anh hem? 💕💕💕
+            💕💕 Em iu à... Em muốn làm va lung tung của anh hem? 💕💕
           </h1>
           <div className="flex items-center">
             <button
